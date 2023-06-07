@@ -22,7 +22,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 # Second Milestone
 Wiring and Programming:
-- I completed the wiring by referencing the provided instructions for the SunFounder kit [here]([url](https://docs.sunfounder.com/projects/3in1-kit/en/latest/car_project/car_ir_obstacle.html)). I programmed the Arduino by adapting the code provided by SunFounder [here]([url](https://docs.sunfounder.com/projects/3in1-kit/en/latest/download_code.html)). The file I modified can be found at the following file location: 3in1-kit-main > car_project > 5.obstacle_avoidance_module > 5.obstacle_avoidance_module.ino
+- I completed the wiring by referencing the provided instructions for the SunFounder kit [here](https://docs.sunfounder.com/projects/3in1-kit/en/latest/car_project/car_ir_obstacle.html). I programmed the Arduino by adapting the code provided by SunFounder [here](https://docs.sunfounder.com/projects/3in1-kit/en/latest/download_code.html). The file I modified can be found at the following file location: 3in1-kit-main > car_project > 5.obstacle_avoidance_module > 5.obstacle_avoidance_module.ino
 - Modifications: I modified the wiring slightly to utilize a small breadboard. This allowed me to more easily power and ground the components. The original code that was provided was used for obstacles that are in front of the robot. My robot needed to move as long as there WAS an obstacle detected since it was looking for the table below it. I changed the code to invert all of the if statement conditions so it would move forward when an obstacle WAS detected and move backwards when an obstacle was not detected.
 - Challenges: Due to the number of sensors and the motor driver needing to be powered, there was not enough space in the screw terminals to fit all of the necessary wires. I fixed this by incorporating the small breadboard. The IR sensors are very sensitive. I fixed this by continuously adjusting the potentiometers on the IR sensors for the different table conditions.
 - Future Steps: I plan to further tune my robot for different table conditions and brainstorm additional features and modifications to improve my robot.
@@ -33,7 +33,7 @@ Wiring and Programming:
 
 # First Milestone
 Building the Chassis:
-- By following the provided instructions for the SunFounder kit [here]([url](https://docs.sunfounder.com/projects/3in1-kit/en/latest/car_project/car_assemble.html)), I built the chassis for my robot. I completed up to step 11 and modified step 12.
+- By following the provided instructions for the SunFounder kit [here](https://docs.sunfounder.com/projects/3in1-kit/en/latest/car_project/car_assemble.html), I built the chassis for my robot. I completed up to step 11 and modified step 12.
 - Modified Step 12: Cut two strips of cardboard and tape one end to the backs of the IR sensors. Bend the cardboard to a 90 degree angle and tape the other end to the chassis such that the IR sensors are pointed back towards the table.
 - Challenges: The procedure had you put the motors onto the chassis before putting on the stand-offs for the Arduino. This made it difficult to screw in the stand-offs. I would change the procedure to have the stand-offs put on first, then the motors.
 - Future Steps: I plan to wire the robot and complete the programming by the next milestone.
