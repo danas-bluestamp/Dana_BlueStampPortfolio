@@ -1,5 +1,5 @@
 # Wandering Robot
-Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
+Are you tired of your robot always falling off your desk as it drives on it's merry way. Well, I've developed a solution! My robot contains two IR sensors that detect when it has reached the edge of the desk or table. When it detected the edge, it will back up and turn, then resume moving forward.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
@@ -53,12 +53,86 @@ void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
   Serial.println("Hello World!");
+}const int in1 = 5;
+const int in2 = 6;
+const int in3 = 9;
+const int in4 = 10;
+
+const int rightIR = 7;
+const int leftIR = 8;
+
+void setup() {
+  Serial.begin(9600);
+
+  //motor
+  pinMode(in1, OUTPUT);
+  pinMode(in2, OUTPUT);
+  pinMode(in3, OUTPUT);
+  pinMode(in4, OUTPUT);
+
+  //IR obstacle
+  pinMode(leftIR, INPUT);
+  pinMode(rightIR, INPUT);
+
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
 
+  int left = digitalRead(leftIR);  // 0: Obstructed   1: Empty
+  int right = digitalRead(rightIR);
+  int speed = 150;
+
+  // Serial.print("Left: ");
+  // Serial.println(left);
+  // Serial.print("Right: ");
+  // Serial.println(right);
+
+  if (left && !right) {
+    backLeft(speed);
+  } else if (!left && right) {
+    backRight(speed);
+  } else if (left && right) {
+    moveBackward(speed);
+  } else {
+    moveForward(speed);
+  }
 }
+
+void moveForward(int speed) {
+  analogWrite(in1, 0);
+  analogWrite(in2, speed);
+  analogWrite(in3, speed);
+  analogWrite(in4, 0);
+  //Serial.println("forward");
+}
+
+void moveBackward(int speed) {
+  analogWrite(in1, speed);
+  analogWrite(in2, 0);
+  analogWrite(in3, 0);
+  analogWrite(in4, speed);
+  //Serial.println("backward");
+  //delay(100);
+}
+
+void backLeft(int speed) {
+  analogWrite(in1, speed);
+  analogWrite(in2, 0);
+  analogWrite(in3, 0);
+  analogWrite(in4, 0);
+  //Serial.println("back left");
+  //delay(100);
+}
+
+void backRight(int speed) {
+  analogWrite(in1, 0);
+  analogWrite(in2, 0);
+  analogWrite(in3, 0);
+  analogWrite(in4, speed);
+  //Serial.println("back right");
+  //delay(100);
+}
+
 ```
 
 # Bill of Materials
