@@ -5,8 +5,6 @@ Are you tired of your robot always falling off your desk as it drives on it's me
 |:--:|:--:|:--:|:--:|
 | Dana S | UH | Mechanical Engineering | Graduated
 
-**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
-
 ![Headstone Image](wandering_robot_image.PNG)
   
 # Final Milestone
