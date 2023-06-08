@@ -19,7 +19,7 @@ My robot contains two IR sensors that detect when it has reached the edge of the
 ### Add IR Remote Control
 - Add IR remote support so you can start and stop the robot remotely
 
-# Out-of-kit Modifications
+# Out-of-Kit Modifications
 ### Add Back IR Sensor
 - Add a third IR sensor on the back of the robot to detect if it is on the corner of the table so it will not back up too far and fall off
 
