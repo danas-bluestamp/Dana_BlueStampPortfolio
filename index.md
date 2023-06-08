@@ -5,7 +5,7 @@ My robot contains two IR sensors that detect when it has reached the edge of the
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Dana S | UH | Mechanical Engineering | Graduated
+| Dana S. | UH | Mechanical Engineering | Graduated |
 
 ![Headstone Image](wandering_robot_image.PNG)
   
