@@ -10,29 +10,36 @@ My robot contains two IR sensors that detect when it has reached the edge of the
 ![Headstone Image](wandering_robot_image.PNG)
   
 # In-Kit Modifications
-### Add a Start Button:
+### Add a Start Button
 - Add a push button that will start and stop the robot so it doesn't start moving as soon as you apply power
-### Add Bumper Button:
+
+### Add Bumper Button
 - Add a bumper button or buttons that will detect if the robot hits a wall but technically didn't hit the edge of the table
+
 ### Add IR Remote Control
 - Add IR remote support so you can start and stop the robot remotely
 
 # Out-of-kit Modifications
-### Add Back IR Sensor:
+### Add Back IR Sensor
 - Add a third IR sensor on the back of the robot to detect if it is on the corner of the table so it will not back up too far and fall off
-### Use more sensitive IR Sensors:
+
+### Use more sensitive IR Sensors
 - The sensors in the kit required frequent tuning. By purchasing more sensitive IR sensors, this can be avoided
+
 ### Add separate battery pack for motors
 - The motors draw most of the power from the battery. This can lead the IR sensors to be less accurate when the battery is running low. Adding an additional battery pack devote just to powering the motors should help with this
 
 # Challenges: 
 ### Powering the Motors and Sensors via Arduino 
 - Had to change the port that connects to motor driver
+
 ### Broken Motor Driver
 - Kit arrived with ENB jumper cap broken
 - Robot goes through 9V batteries very quickly possibly due to the motor driver being internally damaged
+
 ### Tuning the IR Sensors
 - Making any change to the environment the robot was in (ex. table finish, rounding of table edge) required re-tuning the IR sensors
+
 ### Robot Falling Off Table
 - Robot would fall off the corner of the tables because the weight was not evenly distributed
 - This lead to the leads on one of the IR sensors to get bent
