@@ -59,8 +59,6 @@ Building the Chassis:
 - Future Steps: I plan to wire the robot and complete the programming by the next milestone.
 
 # Code
-Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
-
 ```Arduino
 
 const int in1 = 5;
