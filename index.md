@@ -1,7 +1,7 @@
 # Wandering Robot
 Are you tired of your robot always falling off your desk as it drives on it's merry way? 
 Well, I've developed a solution! 
-My robot contains two IR sensors that detect when it has reached the edge of the desk or table. When it detected the edge, it will back up and turn, then resume moving forward.
+My robot contains two IR sensors that detect when it has reached the edge of the desk or table. When it detects the edge, it will back up and turn, then resume moving forward.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
@@ -11,10 +11,10 @@ My robot contains two IR sensors that detect when it has reached the edge of the
   
 # In-Kit Modifications
 ### Add a Start Button
-- Add a push button that will start and stop the robot so it doesn't start moving as soon as you apply power
+- Add a push button that will start and stop the robot, so it doesn't start moving as soon as you apply power
 
 ### Add Bumper Button
-- Add a bumper button or buttons that will detect if the robot hits a wall but technically didn't hit the edge of the table
+- Add a bumper button or buttons that will detect if the robot hits a wall, but technically didn't hit the edge of the table
 
 ### Add IR Remote Control
 - Add IR remote support so you can start and stop the robot remotely
