@@ -18,6 +18,8 @@ My robot contains two IR sensors that detect when it has reached the edge of the
 
 ### Add IR Remote Control
 - Add IR remote support so you can start and stop the robot remotely
+- Add IR remote support so you can adjust the IR sensitivity remotely
+- Add IR remote support so you can adjust the speed remotely
 
 # Out-of-Kit Modifications
 ### Add Back IR Sensor
