@@ -7,15 +7,33 @@ Are you tired of your robot always falling off your desk as it drives on it's me
 
 ![Headstone Image](wandering_robot_image.PNG)
   
-# Final Milestone
-Modifications to Project:
-- Modifications to be done with kit parts: Add a start button, Add a bumper button, Add IR controller support
-- Modifications to be done with Adafruit parts: Add back IR sensor to detect table edge, Add more powerful motors, Add separate battery pack for motors
-- Challenges: Powering the motors and sensors via Arduino -> Had to change port that connects to motor driver, Broken motor driver -> Part arrived with ENB jumper cap broken, robot goes through 9V batteries very quickly
+# In-Kit Modifications
+Add a Start Button:
+- Add a push button that will start and stop the robot so it doesn't start moving as soon as you apply power
+Add Bumper Button:
+- Add a bumper button or buttons that will detect if the robot hits a wall but technically didn't hit the edge of the table
+Add IR Remote Control
+- Add IR remote support so you can start and stop the robot remotely
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+# Out-of-kit Modifications
+Add Back IR Sensor:
+- Add a third IR sensor on the back of the robot to detect if it is on the corner of the table so it will not back up too far and fall off
+Use more sensitive IR Sensors:
+- The sensors in the kit required frequent tuning. By purchasing more sensitive IR sensors, this can be avoided
+Add separate battery pack for motors
+- The motors draw most of the power from the battery. This can lead the IR sensors to be less accurate when the battery is running low. Adding an additional battery pack devote just to powering the motors should help with this
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+# Challenges: 
+Powering the Motors and Sensors via Arduino 
+- Had to change the port that connects to motor driver
+Broken Motor Driver
+- Kit arrived with ENB jumper cap broken
+- Robot goes through 9V batteries very quickly possibly due to the motor driver being internally damaged
+Tuning the IR Sensors
+- Making any change to the environment the robot was in (ex. table finish, rounding of table edge) required re-tuning the IR sensors
+Robot Falling Off Table
+- Robot would fall off the corner of the tables because the weight was not evenly distributed
+- This lead to the leads on one of the IR sensors to get bent
 
 # Second Milestone
 Wiring and Programming:
@@ -24,23 +42,12 @@ Wiring and Programming:
 - Challenges: Due to the number of sensors and the motor driver needing to be powered, there was not enough space in the screw terminals to fit all of the necessary wires. I fixed this by incorporating the small breadboard. The IR sensors are very sensitive. I fixed this by continuously adjusting the potentiometers on the IR sensors for the different table conditions.
 - Future Steps: I plan to further tune my robot for different table conditions and brainstorm additional features and modifications to improve my robot.
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 # First Milestone
 Building the Chassis:
 - By following the provided instructions for the SunFounder kit [here](https://docs.sunfounder.com/projects/3in1-kit/en/latest/car_project/car_assemble.html), I built the chassis for my robot. I completed up to step 11 and modified step 12.
 - Modified Step 12: Cut two strips of cardboard and tape one end to the backs of the IR sensors. Bend the cardboard to a 90 degree angle and tape the other end to the chassis such that the IR sensors are pointed back towards the table.
 - Challenges: The procedure had you put the motors onto the chassis before putting on the stand-offs for the Arduino. This made it difficult to screw in the stand-offs. I would change the procedure to have the stand-offs put on first, then the motors.
 - Future Steps: I plan to wire the robot and complete the programming by the next milestone.
-
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-# Schematics 
-Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
@@ -128,24 +135,3 @@ void backRight(int speed) {
 }
 
 ```
-
-# Bill of Materials
-Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
-Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
-
-| **Part** | **Note** | **Price** | **Link** |
-|:--:|:--:|:--:|:--:|
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-|:--:|:--:|:--:|:--:|
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-|:--:|:--:|:--:|:--:|
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-|:--:|:--:|:--:|:--:|
-
-# Other Resources/Examples
-One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
-- [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
-- [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
-- [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
-
-To watch the BSE tutorial on how to create a portfolio, click here.
