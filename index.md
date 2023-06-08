@@ -29,7 +29,7 @@ My robot contains two IR sensors that detect when it has reached the edge of the
 ### Add separate battery pack for motors
 - The motors draw most of the power from the battery. This can lead the IR sensors to be less accurate when the battery is running low. Adding an additional battery pack devote just to powering the motors should help with this
 
-# Challenges: 
+# Challenges
 ### Powering the Motors and Sensors via Arduino 
 - Had to change the port that connects to motor driver
 
