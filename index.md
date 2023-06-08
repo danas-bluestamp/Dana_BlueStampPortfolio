@@ -10,11 +10,10 @@ Are you tired of your robot always falling off your desk as it drives on it's me
 ![Headstone Image](logo.svg)
   
 # Final Milestone
-For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
+Modifications to Project:
+- Modifications to be done with kit parts: Add a start button, Add a bumper button, Add IR controller support
+- Modifications to be done with Adafruit parts: Add back IR sensor to detect table edge, Add more powerful motors, Add separate battery pack for motors
+- Challenges: Powering the motors and sensors via Arduino -> Had to change port that connects to motor driver, Broken motor driver -> Part arrived with ENB jumper cap broken, robot goes through 9V batteries very quickly
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
