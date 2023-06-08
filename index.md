@@ -1,5 +1,5 @@
 # Wandering Robot
-Are you tired of your robot always falling off your desk as it drives on it's merry way. Well, I've developed a solution! My robot contains two IR sensors that detect when it has reached the edge of the desk or table. When it detected the edge, it will back up and turn, then resume moving forward.
+Are you tired of your robot always falling off your desk as it drives on it's merry way? Well, I've developed a solution! My robot contains two IR sensors that detect when it has reached the edge of the desk or table. When it detected the edge, it will back up and turn, then resume moving forward.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
